@@ -1,0 +1,1 @@
+NodeJSEnv=window.NodeJSEnv||{};
