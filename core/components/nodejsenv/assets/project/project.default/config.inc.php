@@ -1,0 +1,31 @@
+<?php
+
+$config=[
+    'source'=>[
+        'js'=>'/assets/js',
+        'css'=>'/assets/css',
+        'css_main'=>'/assets/css/main.scss',
+        'css_libs'=>'/assets/css/libs',
+        'images'=>'/assets/images',
+        'fonts'=>'/assets/fonts',
+        'templates'=>'/templates',
+        'pages'=>'/templates/pages',
+    ],
+    'dest'=>[
+        'root'=>'assets/web',
+        'js'=>'/js',
+        'css'=>'/css',
+        'css_libs'=>'/css/libs',
+        'images'=>'/images',
+        'fonts'=>'/fonts',
+        'pages'=>'/templates',
+        'page_ext'=>'html',
+    ],
+    'export'=>[
+        'js'=>'/assets/js',
+        'css'=>'/assets/css',
+        'templates'=>'/templates',
+        'pages'=>'/templates/pages',
+        'source'=>2,
+    ],
+];

@@ -76,11 +76,11 @@ then
         
         if [ -f $ProjDIR/.gitignore ]
         then
-            for LINE in $(cat $projBase/.gitignore) ; do
+            for LINE in $(cat $projBase/..gitignore) ; do
                 if [[ $(grep -F $LINE $ProjDIR/.gitignore) == '' ]]; then echo -en "\n$LINE" >> $ProjDIR/.gitignore; fi
             done
         else
-            cp $projBase/.gitignore $ProjDIR/.gitignore
+            cp $projBase/..gitignore $ProjDIR/.gitignore
         fi
     fi
     
