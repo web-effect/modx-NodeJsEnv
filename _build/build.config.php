@@ -23,6 +23,7 @@ $config=[
     ],
     'modx'=>dirname(dirname(dirname(__DIR__))).'/modx/',
 ];
+require(__DIR__.'/env.config.php');
 
 if(!$config['component']['core']){
     $config['component']['core']=$config['project'].'core/components/'.$config['component']['namespace'].'/';
@@ -67,7 +68,3 @@ if(!$config['component']['attributes']['license']&&file_exists($config['componen
 if(!$config['component']['attributes']['readme']&&file_exists($config['component']['core'].'docs/readme.txt')){
     $config['component']['attributes']['readme']=file_get_contents($config['component']['core'].'docs/readme.txt');
 }
-
-
-define('MODX_CORE_PATH', $config['modx']);
-define('MODX_CONFIG_KEY','config');
