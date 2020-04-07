@@ -1,4 +1,4 @@
 [submodule "builder"]
 	path = _build/includes/builder
-	url = https://github.com/SintezCode/modx-packageBuilder
+	url = https://github.com/web-effect/modx-packageBuilder
 	branch = master
